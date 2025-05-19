@@ -7,7 +7,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  const toggleDropdown = () => setDropdownOpen(prev => !prev);
+  const toggleDropdown = () => setDropdownOpen((prev) => !prev);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -24,7 +24,9 @@ const Navbar = () => {
       <div className="logo">BookNest</div>
 
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
 
         <li className="dropdown" ref={dropdownRef}>
           <Link
@@ -40,20 +42,40 @@ const Navbar = () => {
 
           {dropdownOpen && (
             <ul className="dropdown-content">
-              <li><Link to="/category/fiction">Fiction</Link></li>
-              <li><Link to="/category/non-fiction">Non-fiction</Link></li>
-              <li><Link to="/category/academic">Academic</Link></li>
+              <li>
+                <Link to="/category/fiction">Fiction</Link>
+              </li>
+              <li>
+                <Link to="/category/non-fiction">Education</Link>
+              </li>
+              <li>
+                <Link to="/category/academic">Children</Link>
+              </li>
+              <li>
+                <Link to="/category/academic">Novel</Link>
+              </li>
+              <li>
+                <Link to="/category/academic">Short Story</Link>
+              </li>
             </ul>
           )}
         </li>
 
-        <li><Link to="/bestsellers">Best Sellers</Link></li>
-        <li><Link to="/new">New Arrivals</Link></li>
+        <li>
+          <Link to="/bestsellers">Best Sellers</Link>
+        </li>
+        <li>
+          <Link to="/new">New Arrivals</Link>
+        </li>
       </ul>
 
       <div className="right-icons">
-        <Link to="/cart"><FaShoppingBag className="icon" /></Link>
-        <Link to="/login"><FaUserCircle className="icon" /></Link>
+        <Link to="/cart">
+          <FaShoppingBag className="icon" />
+        </Link>
+        <Link to="/login">
+          <FaUserCircle className="icon" />
+        </Link>
       </div>
     </nav>
   );
