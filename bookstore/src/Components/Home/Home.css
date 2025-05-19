@@ -12,7 +12,7 @@
 }
 .h-sec1-imge img{
     height: 450px;
-    width: 450px;
+    width: 550px;
 }
 
 .h-sec2{
@@ -36,4 +36,12 @@
 .h-sec2-imge h3{
     padding-top: 15px;
     font-size: 17px;
+}
+
+.home-sec3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 250px;
+    background-color: #F4E4C3;
 }
