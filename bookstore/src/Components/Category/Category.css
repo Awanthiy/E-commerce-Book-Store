@@ -13,9 +13,9 @@
 .book-card {
   background-color: rgba(255, 255, 255, 0.85); /* soft overlay over br.jpg */
   border-radius: 12px;
-  padding: 16px;
+  padding: 10px;
   text-align: center;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
